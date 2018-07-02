@@ -1,0 +1,24 @@
+{
+  "name":"fetchable",
+  "description":"It converts data as fetchable uri like URL.createObjectURL/revokeObjectURL",
+  "version":"1.0.1",
+  "author": {
+    "name": "Raymond Li",
+    "email": "lalalic@139.com"
+  },  
+  "dependencies": {
+    "fetch-any": "^1.0.0"
+  },
+  "license":"MIT",
+  "keywords": [
+    "fetch, file"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "readme": "README.md"  
+}
