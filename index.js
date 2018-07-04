@@ -2,15 +2,19 @@ var uuid=0
 var cached=new Map()//to support Fetchable("xxx").createObjectURL
 
 module.exports=function fetchable(PROTOCOL="blob"){
-	if(window.URL){
-		return {
-			createObjectURL(data,type){
-				return window.URL.createObjectURL(new Blob([data],{type}))
-			},
-			revokeObjectURL(){
-				window.URL.revokeObjectURL(...arguments)
+	try{
+		if(window.URL){
+			return {
+				createObjectURL(data,type){
+					return window.URL.createObjectURL(new Blob([data],{type}))
+				},
+				revokeObjectURL(){
+					window.URL.revokeObjectURL(...arguments)
+				}
 			}
 		}
+	}catch(){
+		
 	}
 	
 	
