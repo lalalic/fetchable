@@ -13,7 +13,7 @@ module.exports=function fetchable(PROTOCOL="blob"){
 				}
 			}
 		}
-	}catch(){
+	}catch(e){
 		
 	}
 	
