@@ -1,7 +1,7 @@
 {
   "name":"fetchable",
   "description":"It converts data as fetchable uri like URL.createObjectURL/revokeObjectURL",
-  "version":"1.0.1",
+  "version":"1.0.2",
   "author": {
     "name": "Raymond Li",
     "email": "lalalic@139.com"
