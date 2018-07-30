@@ -3,7 +3,7 @@ var cached=new Map()//to support Fetchable("xxx").createObjectURL
 
 module.exports=function fetchable(PROTOCOL="blob"){
 	try{
-		if(window.URL){
+		if(URL && Blob && URL.createObjectURL){
 			return {
 				createObjectURL(data,type){
 					return window.URL.createObjectURL(new Blob([data],{type}))
